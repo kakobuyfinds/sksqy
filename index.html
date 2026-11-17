@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<title>HooBuy spreadsheet | CAFANS Finds &amp; Shipping Cost Guide</title>
+<meta name="description" content="Browse CAFANS shoes, sweatshirts, tees and jackets in this independent HooBuy spreadsheet guide. Compare estimated item prices and calculate your total before ordering.">
+<style>
+:root{color-scheme:light;--ink:#142c22;--paper:#f5f6ee;--green:#154b37;--line:#d2dccc}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+.wrap{width:min(calc(100% - 2rem),1120px);margin:auto}header,footer{padding:1rem 0;border-block:1px solid var(--line)}a{color:var(--green)}:focus-visible{outline:3px solid #ad5700;outline-offset:4px}
+.hero{margin-top:1.5rem;border-radius:1.5rem;padding:clamp(2rem,7vw,5rem) 1rem;text-align:center;background:#143b2c;color:#fff}
+h1,h2{font-family:Georgia,serif;line-height:1.12;margin:0 0 .65em}h1{font-size:clamp(2.4rem,7vw,5.3rem)}h2{font-size:clamp(1.8rem,4vw,3rem)}.hero p{max-width:56ch;margin:0 auto 1.3rem}
+.button{display:inline-block;padding:.65rem 1.15rem;border-radius:2rem;background:#dfedb4;color:#163826;font-weight:700;text-decoration:none;margin:.25rem}.button.secondary{background:white}
+section{margin:3rem 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,225px),1fr));gap:1rem}
+article,.panel,details{background:white;border:1px solid var(--line);border-radius:1rem;overflow:hidden}.grid img{display:block;width:100%;aspect-ratio:1;object-fit:contain;background:#eef1e9}.card,.panel,details{padding:1rem}.card h3{margin:0;font-size:1.06rem}.card p{margin:.3rem 0}
+.controls{display:flex;flex-wrap:wrap;gap:1rem;margin:1rem 0}label{display:grid;gap:.25rem}input,select{font:inherit;padding:.4rem;border:1px solid #718879;border-radius:.4rem;background:white;color:var(--ink);max-width:100%}input[type=number]{width:9rem}output{font-weight:700}details{margin:.55rem 0}summary{cursor:pointer;font-weight:700}
+</style>
+<link rel="canonical" href="https://kakobuyfinds.github.io/sksqy/">
+</head>
+<body>
+<!-- index.html
+Search review: hoospreadsheet.net/hoobuy-spreadsheet/ emphasizes category breadth, hoobuyhub.com shows prices and buy links, hoobuysheets.net provides title search and link checks, and rep.tools/guides/hoobuy-spreadsheet explains agent links. This page combines an HTML-first CAFANS selection with a filter, a cost calculator and option-specific QC checks.
+Catalog snapshot: https://cafans.com/ (featured product names and estimated USD prices).
+Indexing status: pending. Publish at the final public URL, set its self-referencing canonical, then request indexing for that URL in Google Search Console and submit it in Bing Webmaster Tools.
+-->
+<header><div class="wrap"><strong>CAFANS Finds Guide</strong> · <a href="#catalog">Catalog</a> · <a href="#cost">Cost calculator</a></div></header>
+<main class="wrap">
+<div class="hero">
+<h1>HooBuy spreadsheet</h1>
+<p>Browse shoes and streetwear from CAFANS, then compare sizing, warehouse photos and shipping quotes before choosing an agent. An independent shopping guide.</p>
+<a class="button" href="https://cafans.com">HooBuy spreadsheet</a>
+<a class="button secondary" href="https://cafans.com">Buy it now</a>
+</div>
+<section id="catalog" aria-labelledby="catalog-heading">
+<h2 id="catalog-heading">CAFANS product catalog</h2>
+<p>Selected listings from the CAFANS homepage. Estimated USD item prices exclude shipping and fees. Confirm the current price, options and agent availability on each listing.</p>
+<div class="controls" id="filters" hidden style="display:none">
+<label>Product name <input id="query" type="search" placeholder="Search this catalog"></label>
+<label>Category <select id="category"><option value="">All categories</option><option>Shoes</option><option>Sweatshirts</option><option>T-shirts</option><option>Jackets</option></select></label>
+</div>
+<p id="results" role="status" hidden></p>
+<div class="grid" id="products">
+<article data-category="Shoes"><a href="https://cafans.com/goods-158791.html" aria-label="View Leather Slides on CAFANS"><img src="https://si.geilicdn.com/open1769158365-252808396-70340000019822fe6f2d0a23b491_1200_1200.jpg" alt="Leather Slides" width="480" height="480"></a><div class="card"><h3>Leather Slides</h3><p>Est. $62.36 USD</p><a href="https://cafans.com/goods-158791.html">View listing</a></div></article>
+<article data-category="Sweatshirts"><a href="https://cafans.com/goods-158792.html" aria-label="View Sweatshirt on CAFANS"><img src="https://si.geilicdn.com/open1862809525-1234478995-56360000019a9d1b5cc60aa081c2_1200_1200.jpg" alt="Sweatshirt" width="480" height="480" loading="lazy"></a><div class="card"><h3>Sweatshirt</h3><p>Est. $27.50 USD</p><a href="https://cafans.com/goods-158792.html">View listing</a></div></article>
+<article data-category="T-shirts"><a href="https://cafans.com/goods-158200.html" aria-label="View Unisex Embroidered Oversized T-Shirt on CAFANS"><img src="https://si.geilicdn.com/open1792148229-1234478995-4b8f00000196ff70111b0aa08290_1066_1066.jpg" alt="Unisex Embroidered Oversized T-Shirt" width="480" height="480" loading="lazy"></a><div class="card"><h3>Unisex Embroidered Oversized T-Shirt</h3><p>Est. $32.64 USD</p><a href="https://cafans.com/goods-158200.html">View listing</a></div></article>
+<article data-category="Jackets"><a href="https://cafans.com/goods-158158.html" aria-label="View Jacket 0608260 on CAFANS"><img src="https://si.geilicdn.com/open1792148229-1234478995-512100000197bb65dee90a23b4de_1080_1080.jpg" alt="Jacket 0608260" width="480" height="480" loading="lazy"></a><div class="card"><h3>Jacket – 0608260</h3><p>Est. $27.50 USD</p><a href="https://cafans.com/goods-158158.html">View listing</a></div></article>
+</div>
+</section>
+<section id="cost" aria-labelledby="cost-heading">
+<h2 id="cost-heading">Estimate your total in USD</h2>
+<p>Add the item price, local delivery, agent fees, international shipping and any taxes or duties shown in your quote. Use the packed dimensions and weight when comparing shipping options.</p>
+<div class="panel" id="calculator" hidden>
+<div class="controls">
+<label>Item price <input type="number" min="0" step="0.01" inputmode="decimal"></label>
+<label>Local delivery <input type="number" min="0" step="0.01" inputmode="decimal"></label>
+<label>Agent fees <input type="number" min="0" step="0.01" inputmode="decimal"></label>
+<label>International shipping <input type="number" min="0" step="0.01" inputmode="decimal"></label>
+<label>Taxes and duties <input type="number" min="0" step="0.01" inputmode="decimal"></label>
+</div>
+<output id="total" aria-live="polite">Enter a quoted amount to start.</output>
+</div>
+</section>
+<section aria-labelledby="checks">
+<h2 id="checks">What to check before ordering</h2>
+<ol>
+<li>Save the original seller URL and the exact size and color. Check whether your selected agent accepts that link and ships to your destination.</li>
+<li>For shoes, compare the sizing chart with your foot measurements and confirm whether each measurement refers to foot or insole length. For clothing, compare garment measurements with a piece you own.</li>
+<li>If warehouse quality-control photos are available, check the size label, color and visible damage. Ask about unclear measurements while the return window is still open.</li>
+</ol>
+<details><summary>Does every CAFANS listing offer HooBuy?</summary><p>Agent options vary by listing. Open the product page to see the available platforms and check the original seller link if you want to use a specific agent.</p></details>
+<details><summary>Why can shipping quotes differ for the same item?</summary><p>Carriers can use actual or dimensional weight. Compare the packed parcel dimensions, billable weight and included fees for the same destination.</p></details>
+</section>
+</main>
+<footer><div class="wrap">Independent guide · Product listings and estimates sourced from <a href="https://cafans.com">CAFANS</a>.</div></footer>
+<script>
+const query = document.querySelector('#query');
+const category = document.querySelector('#category');
+const cards = [...document.querySelectorAll('#products article')];
+const results = document.querySelector('#results');
+function filterCatalog() {
+  const term = query.value.trim().toLowerCase();
+  let count = 0;
+  for (const card of cards) {
+    const title = card.querySelector('h3').textContent.toLowerCase();
+    const matches = title.includes(term) && (!category.value || card.dataset.category === category.value);
+    card.hidden = !matches;
+    count += Number(matches);
+  }
+  results.textContent = count === 1 ? '1 matching product' : count + ' matching products';
+}
+query.addEventListener('input', filterCatalog);
+category.addEventListener('change', filterCatalog);
+const filters = document.querySelector('#filters');
+filters.hidden = false;
+filters.style.removeProperty('display');
+results.hidden = false;
+filterCatalog();
+const calculator = document.querySelector('#calculator');
+const amounts = [...calculator.querySelectorAll('input')];
+const total = document.querySelector('#total');
+const usd = new Intl.NumberFormat('en-US', {style:'currency',currency:'USD'});
+calculator.addEventListener('input', () => {
+  if (amounts.some(field => !field.validity.valid)) {
+    total.textContent = 'Enter non-negative amounts with up to two decimal places.';
+  } else if (amounts.every(field => field.value === '')) {
+    total.textContent = 'Enter a quoted amount to start.';
+  } else {
+    const cents = amounts.reduce((sum, field) => sum + Math.round(Number(field.value) * 100), 0);
+    total.textContent = 'Subtotal for entered amounts: ' + usd.format(cents / 100);
+  }
+});
+calculator.hidden = false;
+</script>
+</body>
+</html>
